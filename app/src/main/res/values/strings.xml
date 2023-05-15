@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Perfect English</string>
+    <string name="test">Диктант</string>
+    <string name="test_description">Закрепляйте изученные английские слова в памяти.</string>
+    <string name="listening">Аудирование</string>
+    <string name="listening_description">Научитесь воспринимать английскую речь на слух</string>
+    <string name="start_test">Начать диктант</string>
+    <string name="original">Оригинал:</string>
+    <string name="translation">Перевод:</string>
+    <string name="no_words">Вы не добавили ни одного слова.</string>
+    <string name="edit_word">Редактирование слова</string>
+    <string name="apply">Применить</string>
+    <string name="cancel">Отмена</string>
+    <string name="create_word">Новое слово</string>
+    <string name="carry_on">Продолжить</string>
+    <string name="no_words_to_test">Нельзя провети диктант без слов…</string>
+    <string name="yes">Да</string>
+    <string name="dialog_message_exit">Вы уверены, что хотите прекратить диктант?</string>
+    <string name="amount_correct_words">Вы ответили правильно на %d из %d вопросов.</string>
+    <string name="mistakes_in_words">Ошибки в словах:</string>
+    <string name="all_words_correct">Все слова были написаны верно.</string>
+    <string name="test_results">Результаты диктанта</string>
+    <string name="test_settings">Настройки диктанта</string>
+    <string name="unable_tts">Невохможно воспроизвести текст в речь...</string>
+    <string name="incorrect_input">Перевод и оригинал введены неверно.</string>
+</resources>
