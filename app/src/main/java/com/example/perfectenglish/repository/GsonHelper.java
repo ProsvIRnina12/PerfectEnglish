@@ -2,6 +2,7 @@ package com.example.perfectenglish.repository;
 
 import android.app.Activity;
 import android.content.Context;
+import android.os.AsyncTask;
 
 import androidx.annotation.Nullable;
 import androidx.lifecycle.LifecycleOwner;
@@ -44,6 +45,27 @@ public class GsonHelper {
                     }
                 });
         WorkManager.getInstance(context).enqueue(workRequest);
+    }
+
+    public static void importWordsAsyncTask(Context context, ImportedWordsListener listener) {
+        class WordsTask extends AsyncTask<Context, Void, String[][]> {
+
+            @Override
+            protected String[][] doInBackground(Context... contexts) {
+                return GsonHelper.importFromJson(contexts[0]);
+            }
+
+            @Override
+            protected void onPostExecute(String[][] strings) {
+                if(strings==null) {
+                    listener.onImported(null, null);
+                }
+                else listener.onImported(strings[0], strings[1]);
+            }
+        }
+
+        WordsTask task = new WordsTask();
+        task.execute(context);
     }
 
     @Nullable

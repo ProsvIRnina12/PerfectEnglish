@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/background_widget">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_label_remember_random_word"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:text="@string/remember_random_word"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_random_word_original"
+        android:layout_marginTop="16dp"
+        tools:text="Original word"
+        android:textColor="#3F51B5"
+        android:gravity="center"
+        android:textSize="26sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_random_word_translation"
+        android:layout_marginTop="8dp"
+        android:textStyle="italic"
+        android:textSize="22sp"
+        tools:text="Перевод слова"
+        android:textColor="#2196F3"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_no_words_for_widget"
+        android:text="@string/no_words_for_widget"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/black"/>
+</LinearLayout>

@@ -23,4 +23,7 @@
     <string name="test_settings">Настройки диктанта</string>
     <string name="unable_tts">Невохможно воспроизвести текст в речь...</string>
     <string name="incorrect_input">Перевод и оригинал введены неверно.</string>
+    <string name="remember_random_word">Запомни слово:</string>
+    <string name="widget_random_word_description">Запомни слово!</string>
+    <string name="no_words_for_widget">Нет слов, чтобы их запоминать.\nПожалуйста, добавьте слова в приложении.</string>
 </resources>
